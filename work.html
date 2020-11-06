@@ -1,0 +1,27 @@
+---
+layout: default
+title: Work
+permalink: /work/
+---
+
+<span style="color:lightgray">
+TODO:
+- Sort Post
+- Add Post Detail
+</span>
+
+<div style="text-align: center;">
+	<h1>Latest work</h1>
+</div>
+<ul style="padding: 0; margin: 0;">
+  {% for work in site.works %}
+    <li style="list-style-type: none;">
+    	<div style="width: 60%; text-align: center; margin: 30px auto;">
+	    	<a href="{{ work.permalink }}">
+			    <h2>{{ work.title }}</h2>
+			    <img src="{{ work.thumbnail }}" />
+			</a>
+		</div>
+    </li>
+  {% endfor %}
+</ul>
